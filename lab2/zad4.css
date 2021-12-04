@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+}
+img {
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+.card {
+    flex: 23%;
+    max-width: 580px;
+    min-width: 260px;
+    padding: 0 0;
+    margin: 10px auto;
+    margin: 15px;
+    
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border-radius: 15px;
+}
+@media (min-width: 886px) {
+   .card {
+       max-width: 31%;
+   }
+}
+
+.name {
+    padding-left: 8%;
+    font-size: large;
+    font-style:normal;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+}
+.desc {
+    padding-left: 8%;
+    color: rgb(255, 38, 0);
+    font-size:medium;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+}
+.text {
+    border-bottom: 1px solid rgb(158, 156, 156);
+    color: rgb(107, 105, 101);
+    font-stretch:ultra-condensed;
+    padding-bottom: 25px;
+    width: 85%;
+    margin: 0 8% 25px;
+
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content: center;
+    justify-items: center;
+    align-content: space-around;
+    justify-content:left;
+    padding: 0 0;
+}
+.container {
+    display: grid;
+    grid-template-areas:
+    'article . comment'
+    'article . likes';
+}
+.alone {
+    background-color: #ec6464;
+    border: none;
+    margin: 0 0 15px 15px;
+    color: white;
+    padding: 10px 10px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: 100%;
+}
+.group {
+    margin-left: 40px;
+}
+.comment {
+    grid-area: comment;
+    color: rgb(85, 84, 84);
+    background: none;
+    border: none;
+    
+}
+.likes {
+    grid-area: likes;
+    color: rgb(85, 84, 84);
+    background: none;
+    border: none;
+}

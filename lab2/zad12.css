@@ -1,0 +1,394 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #efefef;
+    min-width: 280px;
+}
+
+.container{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    overflow: hidden;
+}
+
+.card{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    width: 860px;
+}
+
+.shoeBackground{
+    position: relative;
+    width: 50%;
+    height: 475px;
+    box-shadow: -15px 0 35px rgba(0, 0, 0, 0.1),
+    0 -15px 35px rgba(0, 0, 0, 0.5),
+    0 15px 35px rgba(0, 0, 0, 0.534);
+    transition: .5s;
+}
+
+.logo{
+    position: absolute;
+    width: 100px;
+    left: 20px;
+    top: 20px;
+}
+
+.share{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: black;
+}
+
+
+.share i{
+    line-height: 50px;
+}
+
+.nike{
+    position: absolute;
+    top: 85px;
+    left: 15px;
+    font-size: 11rem;
+    text-transform: uppercase;
+    line-height: .9;
+    color: #fff;
+    opacity: .1;
+}
+
+.shoe{
+    position: absolute;
+    width: 140%;
+    opacity: 0;
+    bottom: 0;
+    right: 0;
+    transform: rotate(-30deg);
+    transition: .5s;
+}
+
+.shoe.show{
+    opacity: 1;
+}
+
+.info{
+    width: 50%;
+    background-color: #fff;
+    z-index: 1;
+    padding: 35px 40px;
+    box-shadow: 15px 0 35px rgba(0, 0, 0, 0.1),
+    0 -15px 35px rgba(0, 0, 0, 0.1),
+    0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.shoeName{
+    padding: 0 0 10px 0;
+}
+
+.shoeName div{
+    display: flex;
+    align-items: center;
+}
+
+.shoeName div .big{
+    margin-right: 10px;
+    font-size: 2rem;
+    color: rgb(46, 45, 45);
+    line-height: 1;
+}
+
+.shoeName div .new{
+    background-color: #0136af;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    padding: 3px 10px;
+    border-radius: 5px;
+    transition: .5s;
+}
+
+.shoeName .small{
+    font-weight: 490;
+    color: rgb(70, 69, 69);
+    margin-top: 3px;
+    text-transform: capitalize;
+}
+
+.shoeName, .description, .color-container, .size-container{
+    border-bottom: 1px solid #dadada;
+}
+
+.description{
+    padding: 10px 0;
+}
+
+.title{
+    color: #3a3a3a;
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.text{
+    color: #555;
+    font-size: 17px;
+}
+
+.color-container{
+    padding: 10px 0;
+    margin: 10px 0;
+}
+.colors {
+    margin: 10px 0;
+}
+
+.size-container{
+    padding: 10px 0;
+    margin-bottom: 10px;
+}
+
+.buy-price{
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price{
+    color: #333;
+    display: flex;
+    align-items: flex-start;
+}
+
+.price h1{
+    font-size: 2.1rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.price i{
+    font-size: 1.4rem;
+    margin-right: 1px;
+}
+
+.buy{
+    padding: .7rem 1rem;
+    background-color: #0136af;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: .5s;
+}
+
+.buy i{
+    margin-right: 2px;
+}
+
+input {
+    display: none;
+}
+.si {
+  display: inline-block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  height: 20px;
+  margin: 3px;
+  transition: 2s;
+}
+.si:first-of-type {
+    margin-left: 17px;
+}
+
+input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 30px;
+  width: 28px;
+  background-color: rgb(223, 219, 219);
+  border-radius: 5px;
+  transition: 0.5s;
+}
+
+.si input:checked ~ .checkmark {
+  background-color: #015497;
+}
+
+.num {
+    margin-left: 8px;
+    margin-top: 2px;
+}
+.butt {
+    position: relative;
+    margin: 20px;
+}
+.icon {
+    position: absolute;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+#blue:checked ~ .container .card .info .color-container .colors #iblue{
+    padding: 10px;
+    border: 1px solid blue;
+    box-shadow: 0px 0px 5px 5px rgb(78, 78, 78);
+}
+#green:checked ~ .container .card .info .color-container .colors #igreen{
+    padding: 10px;
+    border: 1px solid green;
+    box-shadow: 0px 0px 5px 5px rgb(78, 78, 78);
+}
+#red:checked ~ .container .card .info .color-container .colors #ired{
+    padding: 10px;
+    border: 1px solid red;
+    box-shadow: 0px 0px 5px 5px rgb(78, 78, 78);
+}
+#black:checked ~ .container .card .info .color-container .colors #iblack{
+    padding: 10px;
+    border: 1px solid black;
+    box-shadow: 0px 0px 5px 5px rgb(78, 78, 78);
+}
+
+#iblue {
+    background-color: blue;
+}
+#igreen {
+    background-color: green;
+}
+#ired {
+    background-color: red;
+}
+#iblack {
+    background-color: black;
+}
+#blue:checked ~  .container .card .shoeBackground{
+    background-color: rgb(0,74,93);
+}
+#green:checked ~  .container .card .shoeBackground {
+    background-color: rgb(3, 94, 3);
+}
+#red:checked ~  .container .card .shoeBackground {
+    background-color: rgb(224, 2, 2);
+}
+#black:checked ~  .container .card .shoeBackground {
+    background-color: rgb(24, 24, 24);
+}
+
+
+@media  (max-width: 1070px){
+    .shoe{
+        width: 135%;
+    }
+}
+
+@media (max-width: 1000px){
+    .card{
+        flex-direction: column-reverse;
+        width: 100%;
+        box-shadow: 0 0 35px 1px rgba(58, 57, 57, 0.63);
+    }
+    
+    .card > div{
+        width: 100%;
+    }
+
+    .shoe{
+        width: 100%;
+        transform: rotate(-15deg) translateY(-50%);
+        top: 55%;
+        right: 2%;
+    }
+
+    .nike{
+        top: 20%;
+        left: 5%;
+    }
+}
+
+@media (max-width: 600px){
+    .share{
+        width: 40px;
+        height: 40px;
+    }
+
+    .share i {
+        font-size: 1rem;
+        line-height: 40px;
+    }
+
+    .logo{
+        width: 70px;
+    }
+}
+
+@media (max-width: 490px){
+    
+    .buy{
+        padding: .5rem .8rem;
+        font-size: .8rem;
+    }
+
+    .price h1{
+        font-size: 1.5rem;
+    }
+
+    .price i{
+        font-size: .9rem;
+    }
+}
+    
+
+@media (max-width: 400px){
+    .buy i{
+        display: none;
+    }
+
+    .container{
+        padding: 20px;
+    }
+    .si {
+    padding-left: 25px;
+    margin-bottom: 8px;
+    font-size: 15px;
+    height: 15px;
+    margin: 3px;
+}
+    .num {
+        margin-top: 5px;
+        margin-left: 10px;
+    }
+}

@@ -1,0 +1,37 @@
+{
+	"Products" : [
+		{
+			"Samochody" : [
+				{ "nazwa": "Fiat" }, 
+				{ "nazwa": "Mercedes" }
+			]
+		},
+		{
+			"Rowery" : [ 
+				{ "nazwa": "Kross" }, 
+				{ "nazwa": "Merida"}
+			]
+		},
+		{
+			"Soki" : [ 
+				{ "nazwa": "Jupi" }, 
+				{ "nazwa": "Kubuś" }
+			]
+		},
+		{
+			"Pieczywo" : [
+				{ "nazwa": "Bułka" }, 
+				{ "nazwa": "Chleb żytni" },
+				{ "nazwa": "Bagietka" }, 
+				{ "nazwa": "Kajzerka" }
+			]
+		},
+		{
+			"Warzywa" : [
+				{ "nazwa": "Marchewka" },
+				{ "nazwa": "Ogórek" },
+				{ "nazwa": "Pietruszka" }
+			]
+		}
+	]
+}

@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+    overflow: hidden;
+}
+html, body {
+    margin:0;
+    height:100%;
+}
+section {
+   display: flex;
+   width: 100%;
+   height: 100%;
+
+}
+div {
+   flex: 20%;
+   height: 100%;
+   transition: flex 0.5s;
+}
+div:hover {
+   flex: 50%;
+}
+img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}

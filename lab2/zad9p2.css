@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    display: flex;
+    position: sticky;
+}
+.first {
+    flex: 50%;
+    justify-content: space-between;
+    display: flex;
+}
+.second {
+    flex: 50%;
+    justify-content: flex-end;
+    display: flex;
+}
+.first > a, .second > a {
+    color: ghostwhite;
+    background-color: rgb(211, 1, 1);
+    width: fit-content;
+    text-align: center;
+    line-height: 50px;
+    font-size:larger;
+    padding: 0 4px;
+    text-decoration: none;
+    border: 2px solid rgb(72, 0, 139);
+    border-collapse: collapse;
+}
+.first > a:hover, .second > a:hover {
+  background-color: rgb(243, 69, 69);
+  cursor: pointer;
+}
+a:target {
+    color: brown;
+    font-size: 50px;
+}
+.container {
+   border-top: 2px solid rgb(211, 1, 1);
+   border-bottom: 2px solid rgb(211, 1, 1);
+   background-color: gainsboro;
+   position: sticky;
+   top: 0;
+   width: 100%;
+   z-index: 1;
+}
+.view {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   justify-items: center;
+}
+.sec {
+   margin: 10px;
+   padding: 10px;
+   width: 98%;
+   top: -100px;
+   min-height: 20rem;
+   border: 1px solid black;
+   text-align: center;
+   justify-content: center;
+   background-image: url("photos/zad4/1.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+img {
+    width: 100%;
+}
+h2 {
+   color: white;
+}
+p {
+   color: white;
+   background-color: rgb(54, 54, 54);
+   opacity: 0.7;
+   padding: 10px;
+   z-index: -1;
+}
+.xd {
+   height: 45px;
+}
+html {
+scroll-behavior: smooth;
+}
+#home:target ~ #h p,#home:target ~ #h h2{
+transition: 2s;
+color: aqua;
+}
+#about:target ~ #ab p,#about:target ~ #ab h2{
+transition: 2s;
+color: aqua;
+}
+#service:target ~ #ser p,#service:target ~ #ser h2{
+transition: 2s;
+color: aqua;
+}
+#join:target ~ #sj p,#join:target ~ #sj h2{
+transition: 2s;
+color: aqua;
+}

@@ -1,0 +1,36 @@
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .container div {
+    max-height: 500px;
+    overflow: auto;
+    position: relative;
+    width: 90%;
+  }
+  .container div th {
+    position: sticky;
+    top: 0px;
+    background-color: rgb(187, 187, 187);
+  }
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+    
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    width: 18%;
+  }
+  tr {
+    width: 100%;
+  }
+    
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }

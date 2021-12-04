@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+}
+body {
+  min-width: 100px;
+}
+.gallery {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex: 100%;
+}
+picture {
+  width: 30%;
+  margin-right: 5px;
+}
+img {
+    width: 100%;
+}
+.column img {
+margin-top: 8px;
+}
+.caption {
+    text-align: center;
+}
+@media(max-width: 450px) {
+  picture {
+    width: 99%;
+  }
+}

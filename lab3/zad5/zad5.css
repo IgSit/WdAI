@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+.container {
+    display: flex;
+    justify-items: center;
+    text-align: center;
+    margin: 25px auto;
+    cursor: pointer;
+    width: fit-content;
+}
+.blue {
+    background-color: aquamarine;
+    padding: 20px;
+}
+.red {
+    background-color: red;
+    padding: 10px;
+}
+.yellow {
+    background-color: yellow;
+    padding: 8px;
+}
+p {
+    margin:10px;
+}
+.container p {
+    margin: 5px auto;
+}
+button {
+    margin-left: 10px;
+}
+.main {
+    margin: 0 auto;
+    width: fit-content;
+}
