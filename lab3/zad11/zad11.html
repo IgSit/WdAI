@@ -5,8 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>zad11</title>
+    <link rel="stylesheet" href="zad11.css">
+    <script defer src="zad11.js"></script>
 </head>
 <body>
-    
+    <div class="window">
+        <div class="title">Zoombieee farm</div>
+
+        <div class="gameContainer">
+            <div class="nick">XD</div>
+            <div class="score">Your score: <p id="value">0</p></div>
+        </div>
+        <div class="scores">
+            <h2>Top scores</h2>
+            <table id="scoreTable">
+                <tr>
+                    <th>Nick</th>
+                    <th>Score</th>
+                </tr>
+            </table>
+        </div>
+
+        <div class="container">
+            <div class="prompt">Enter your name:</div>
+            <div class="name"><input type="text" name="name" id="name" required></div>
+        </div>
+        <div class="play">
+            <button class="start">Play</button>
+        </div>
+    </div>
 </body>
 </html>
